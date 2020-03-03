@@ -26,8 +26,9 @@ const removeLogs = function(filePath) {
 }
 
 
-// create log files: create directory if dne, change current directory
-// to new logs directory, change 10 log files, write some text into file
+/* create log files: create directory if dne, change current directory to new logs directory, 
+ * change 10 log files, write some text into file
+ */
 const createLogs = function(filePath) {
     if(!fs.existsSync(filePath)){
         fs.mkdir(filePath, {recursive: true}, (err) => {
